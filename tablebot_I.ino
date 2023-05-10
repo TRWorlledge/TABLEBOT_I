@@ -10,6 +10,8 @@ int val8 = 0;
 int val9 = 0;
 
 int x = 0;            // Variable for counting distance
+int distance = 100;        //Define varable distance
+int length = 0;           //Define varable length
 
 void setup(){
   Serial.begin(9600);                   // Setup serial monitor for debug
@@ -40,7 +42,7 @@ while (x <100) {
 //‘ x++;
 //
 
-distance = 100
+distance = 100;
 Reverse();
 
 x = 0;
@@ -172,7 +174,7 @@ void Stop(){
 
 void Reverse() {
 x = 0;
-while (x < length {
+while (x < length) {
 servoLeft.write(0);
 servoRight.write(180);
      x++;
